@@ -1,0 +1,64 @@
+body
+  display: block
+  background-image: linear-gradient(rgba(2,0,36,0.25) 0, rgba(2,0,36,0.0) 6%, rgba(2,0,36,0) 65%, rgba(2,0,36,0.15) 100%), url("Assets/bg-noise.png")
+  height: 100vh
+  min-height: 100vh
+  border-top: 16px solid transparent
+  border-bottom: 16px solid transparent
+  border-image: 8 repeating-linear-gradient(-45deg, #ab2008 0, #ab2008 25px, #fff 0, #fff 50px, #0c4da1 0, #0c4da1 75px, #fff 0, #fff 100px)
+  overflow: hidden
+  font-family: "Dubai Regular", sans-serif
+  font-size: 19px
+  color: #526f7f
+
+  @media (max-height: 500px)
+    overflow: auto
+    height: 100%
+    padding: 15px 0
+
+  +bpXsAndSmaller
+    overflow: auto
+    height: 100%
+    padding: 15px 0
+
+.main
+  display: flex
+  height: 100%
+  min-height: 80vh
+  justify-content:  center
+  align-items: center
+  flex-direction: column
+
+.logo
+  width: 250px
+  box-shadow: 0 4px 15px rgba(2,0,36,0.2)
+  +bpXxs
+    width: calc(100% - 30px)
+
+.infoBox
+  margin-top: 40px
+  width: 400px
+  background: rgba(255,255,255,0.8)
+  padding: 20px
+  box-shadow: 0 4px 15px rgba(2,0,36,0.15)
+
+  +bpXsAndSmaller
+    width: calc(100% - 30px)
+  +bpXxs
+    margin-top: 15px
+
+  p
+    display: block
+    margin-bottom: 20px
+    line-height: 29px
+
+    &:last-child
+      margin-bottom: 0
+
+    a
+      color: #0c4da1
+      text-decoration: none
+      font-weight: bold
+
+      &:hover
+        text-decoration: underline

@@ -1,0 +1,22 @@
+{
+  "name": "@neunerlei/luftpost-online-website",
+  "version": "1.0.0",
+  "description": "A simple landing page for my mail domains",
+  "main": "index.js",
+  "repository": "git@github.com:Neunerlei/luftpost-online-website.git",
+  "author": "Martin Neundorfer",
+  "license": "proprietary",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vite": "^5.0.4"
+  },
+  "dependencies": {
+    "@neunerlei/sassy": "^3.1.2"
+  },
+  "scripts": {
+    "dev": "vite --host --port 8080",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
